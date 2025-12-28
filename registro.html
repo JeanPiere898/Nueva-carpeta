@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Registro</title>
+</head>
+<body>
+    <header>
+        <h1>TechStore - Registro de Usuario</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Crea tu Cuenta en TechStore</h2>
+            <p>Regístrate para obtener beneficios exclusivos, descuentos especiales y acceso a ofertas antes que nadie.</p>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    
+                    <div>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="13" max="120">
+                    </div>
+                    
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    
+                    <div>
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Datos de la Cuenta</legend>
+                    
+                    <div>
+                        <label for="usuario">Nombre de usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+                    
+                    <div>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required minlength="8">
+                    </div>
+                    
+                    <div>
+                        <label for="confirmar_contrasena">Confirmar contraseña:</label>
+                        <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    
+                    <div>
+                        <p>¿Cómo nos conociste?</p>
+                        <input type="radio" id="conocido_redes" name="conocido" value="redes">
+                        <label for="conocido_redes">Redes sociales</label><br>
+                        
+                        <input type="radio" id="conocido_amigo" name="conocido" value="amigo">
+                        <label for="conocido_amigo">Recomendación de un amigo</label><br>
+                        
+                        <input type="radio" id="conocido_busqueda" name="conocido" value="busqueda">
+                        <label for="conocido_busqueda">Búsqueda en Internet</label><br>
+                        
+                        <input type="radio" id="conocido_publicidad" name="conocido" value="publicidad">
+                        <label for="conocido_publicidad">Publicidad</label><br>
+                        
+                        <input type="radio" id="conocido_otro" name="conocido" value="otro">
+                        <label for="conocido_otro">Otro</label>
+                    </div>
+                    
+                    <div>
+                        <p>¿Qué categorías de productos te interesan? (Puedes seleccionar varias)</p>
+                        <input type="checkbox" id="categoria_computadoras" name="categoria" value="computadoras">
+                        <label for="categoria_computadoras">Computadoras y Laptops</label><br>
+                        
+                        <input type="checkbox" id="categoria_componentes" name="categoria" value="componentes">
+                        <label for="categoria_componentes">Componentes de PC</label><br>
+                        
+                        <input type="checkbox" id="categoria_perifericos" name="categoria" value="perifericos">
+                        <label for="categoria_perifericos">Periféricos</label><br>
+                        
+                        <input type="checkbox" id="categoria_moviles" name="categoria" value="moviles">
+                        <label for="categoria_moviles">Dispositivos Móviles</label><br>
+                        
+                        <input type="checkbox" id="categoria_hogar" name="categoria" value="hogar">
+                        <label for="categoria_hogar">Electrónica para el Hogar</label>
+                    </div>
+                    
+                    <div>
+                        <label for="pais">País de residencia:</label>
+                        <select id="pais" name="pais">
+                            <option value="">Selecciona un país</option>
+                            <option value="ar">Argentina</option>
+                            <option value="mx">México</option>
+                            <option value="es">España</option>
+                            <option value="co">Colombia</option>
+                            <option value="cl">Chile</option>
+                            <option value="pe">Perú</option>
+                            <option value="us">Estados Unidos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="comentarios">Comentarios adicionales:</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe aquí cualquier comentario o sugerencia..."></textarea>
+                    </div>
+                </fieldset>
+                
+                <div>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a></label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter">Deseo suscribirme al newsletter para recibir ofertas y novedades</label>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Registrarse">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
+            </form>
+        </section>
+        
+        <section>
+            <h3>Beneficios de Registrarte</h3>
+            <ul>
+                <li>Acceso a precios exclusivos para miembros</li>
+                <li>Descuentos en tu cumpleaños</li>
+                <li>Envíos prioritarios sin costo adicional</li>
+                <li>Soporte técnico preferencial</li>
+                <li>Acceso anticipado a ofertas y lanzamientos</li>
+                <li>Puntos por compras que puedes canjear por productos</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>TechStore &copy; 2023 - Todos los derechos reservados</p>
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+</body>
+</html>
